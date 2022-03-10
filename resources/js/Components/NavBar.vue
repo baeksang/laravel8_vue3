@@ -142,13 +142,4 @@ export default {
 
 }
 </script>
-<style scoped>
-.navbar-badge {
-  font-size: .6rem;
-  font-weight: 300;
-  padding: 2px 4px;
-  position: absolute;
-  right: 5px;
-  top: 9px;
-}
-</style>
+
