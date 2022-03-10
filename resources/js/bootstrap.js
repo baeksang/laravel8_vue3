@@ -6,11 +6,18 @@ window._ = require('lodash');
  * code may be modified to fit the specific needs of your application.
  */
 
-import '@popperjs/core'
+//  import '@popperjs/core'
+try {
+    window.Popper = require('popper.js').default;
+    window.$ = window.jQuery = require('jquery');
 
-const bootstrap = require('bootstrap')
+    require('bootstrap');
+} catch (e){}
 
-window.bootstrap = bootstrap
+
+// const bootstrap = require('bootstrap')
+
+// window.bootstrap = bootstrap
 
 import 'chart.js/dist/chart'
 /**

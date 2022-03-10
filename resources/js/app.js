@@ -1,10 +1,12 @@
-require('./bootstrap');
+require('./nodeModule');
 require('./adminlte.min');
+require('./bootstrap');
+
 
 
 // Import modules...
 import { createApp, h } from 'vue';
-import { createInertiaApp } from '@inertiajs/inertia-vue3';
+import { createInertiaApp, Head, Link } from '@inertiajs/inertia-vue3';
 import { InertiaProgress } from '@inertiajs/progress';
 
 // font-awesome 과 관련되 import 를 정의
@@ -28,6 +30,8 @@ createInertiaApp({
     setup({ el, app, props, plugin }) {
         return createApp({ render: () => h(app, props) })
             .component('font-awesome-icon', FontAwesomeIcon)
+            .component('InertiaHead', Head)
+            .component('InertiaLink', Link)
             .use(plugin)
             .mixin({ methods: { route } })
             .mount(el);

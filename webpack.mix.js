@@ -12,8 +12,10 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js').vue()
+    .styles(['resources/css/adminlte.min.css'], 'public/css/app.css')
     .sass('resources/sass/app.scss', 'public/css')
     .disableNotifications()
+    .sourceMaps()
     .webpackConfig(require('./webpack.config'));
 
 if (mix.inProduction()) {
