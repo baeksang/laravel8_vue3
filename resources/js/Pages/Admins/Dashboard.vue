@@ -292,7 +292,7 @@
                                 <span class="direct-chat-timestamp float-right">23 Jan 2:00 pm</span>
                                 </div>
                                 <!-- /.direct-chat-infos -->
-                                <img class="direct-chat-img" src="dist/img/user1-128x128.jpg" alt="message user image">
+                                <img class="direct-chat-img" :src="'/storage/img/user1-128x128.jpg'" alt="message user image">
                                 <!-- /.direct-chat-img -->
                                 <div class="direct-chat-text">
                                 Is this template really for free? That's unbelievable!
@@ -308,7 +308,7 @@
                                 <span class="direct-chat-timestamp float-left">23 Jan 2:05 pm</span>
                                 </div>
                                 <!-- /.direct-chat-infos -->
-                                <img class="direct-chat-img" src="dist/img/user3-128x128.jpg" alt="message user image">
+                                <img class="direct-chat-img" :src="'/storage/img/user3-128x128.jpg'" alt="message user image">
                                 <!-- /.direct-chat-img -->
                                 <div class="direct-chat-text">
                                 You better believe it!
@@ -324,7 +324,7 @@
                                 <span class="direct-chat-timestamp float-right">23 Jan 5:37 pm</span>
                                 </div>
                                 <!-- /.direct-chat-infos -->
-                                <img class="direct-chat-img" src="dist/img/user1-128x128.jpg" alt="message user image">
+                                <img class="direct-chat-img" :src="'/storage/img/user1-128x128.jpg'" alt="message user image">
                                 <!-- /.direct-chat-img -->
                                 <div class="direct-chat-text">
                                 Working with AdminLTE on a great new app! Wanna join?
@@ -340,7 +340,7 @@
                                 <span class="direct-chat-timestamp float-left">23 Jan 6:10 pm</span>
                                 </div>
                                 <!-- /.direct-chat-infos -->
-                                <img class="direct-chat-img" src="dist/img/user3-128x128.jpg" alt="message user image">
+                                <img class="direct-chat-img" :src="'/storage/img/user3-128x128.jpg'" alt="message user image">
                                 <!-- /.direct-chat-img -->
                                 <div class="direct-chat-text">
                                 I would love to.
@@ -357,7 +357,7 @@
                             <ul class="contacts-list">
                                 <li>
                                 <a href="#">
-                                    <img class="contacts-list-img" src="dist/img/user1-128x128.jpg" alt="User Avatar">
+                                    <img class="contacts-list-img" :src="'/storage/img/user1-128x128.jpg'" alt="User Avatar">
 
                                     <div class="contacts-list-info">
                                     <span class="contacts-list-name">
@@ -372,7 +372,7 @@
                                 <!-- End Contact Item -->
                                 <li>
                                 <a href="#">
-                                    <img class="contacts-list-img" src="dist/img/user7-128x128.jpg" alt="User Avatar">
+                                    <img class="contacts-list-img" :src="'/storage/img/user7-128x128.jpg'" alt="User Avatar">
 
                                     <div class="contacts-list-info">
                                     <span class="contacts-list-name">
@@ -387,7 +387,7 @@
                                 <!-- End Contact Item -->
                                 <li>
                                 <a href="#">
-                                    <img class="contacts-list-img" src="dist/img/user3-128x128.jpg" alt="User Avatar">
+                                    <img class="contacts-list-img" :src="'/storage/img/user3-128x128.jpg'" alt="User Avatar">
 
                                     <div class="contacts-list-info">
                                     <span class="contacts-list-name">
@@ -402,7 +402,7 @@
                                 <!-- End Contact Item -->
                                 <li>
                                 <a href="#">
-                                    <img class="contacts-list-img" src="dist/img/user5-128x128.jpg" alt="User Avatar">
+                                    <img class="contacts-list-img" :src="'/storage/img/user5-128x128.jpg'" alt="User Avatar">
 
                                     <div class="contacts-list-info">
                                     <span class="contacts-list-name">
@@ -417,7 +417,7 @@
                                 <!-- End Contact Item -->
                                 <li>
                                 <a href="#">
-                                    <img class="contacts-list-img" src="dist/img/user6-128x128.jpg" alt="User Avatar">
+                                    <img class="contacts-list-img" :src="'/storage/img/user6-128x128.jpg'" alt="User Avatar">
 
                                     <div class="contacts-list-info">
                                     <span class="contacts-list-name">
@@ -432,7 +432,7 @@
                                 <!-- End Contact Item -->
                                 <li>
                                 <a href="#">
-                                    <img class="contacts-list-img" src="dist/img/user8-128x128.jpg" alt="User Avatar">
+                                    <img class="contacts-list-img" :src="'/storage/img/user8-128x128.jpg'" alt="User Avatar">
 
                                     <div class="contacts-list-info">
                                     <span class="contacts-list-name">
@@ -487,42 +487,42 @@
                         <div class="card-body p-0">
                             <ul class="users-list clearfix">
                             <li>
-                                <img src="dist/img/user1-128x128.jpg" alt="User Image">
+                                <img :src="'/storage/img/user1-128x128.jpg'" alt="User Image">
                                 <a class="users-list-name" href="#">Alexander Pierce</a>
                                 <span class="users-list-date">Today</span>
                             </li>
                             <li>
-                                <img src="dist/img/user8-128x128.jpg" alt="User Image">
+                                <img :src="'/storage/img/user8-128x128.jpg'" alt="User Image">
                                 <a class="users-list-name" href="#">Norman</a>
                                 <span class="users-list-date">Yesterday</span>
                             </li>
                             <li>
-                                <img src="dist/img/user7-128x128.jpg" alt="User Image">
+                                <img :src="'/storage/img/user7-128x128.jpg'" alt="User Image">
                                 <a class="users-list-name" href="#">Jane</a>
                                 <span class="users-list-date">12 Jan</span>
                             </li>
                             <li>
-                                <img src="dist/img/user6-128x128.jpg" alt="User Image">
+                                <img :src="'/storage/img/user6-128x128.jpg'" alt="User Image">
                                 <a class="users-list-name" href="#">John</a>
                                 <span class="users-list-date">12 Jan</span>
                             </li>
                             <li>
-                                <img src="dist/img/user2-160x160.jpg" alt="User Image">
+                                <img :src="'/storage/img/user2-160x160.jpg'" alt="User Image">
                                 <a class="users-list-name" href="#">Alexander</a>
                                 <span class="users-list-date">13 Jan</span>
                             </li>
                             <li>
-                                <img src="dist/img/user5-128x128.jpg" alt="User Image">
+                                <img :src="'/storage/img/user5-128x128.jpg'" alt="User Image">
                                 <a class="users-list-name" href="#">Sarah</a>
                                 <span class="users-list-date">14 Jan</span>
                             </li>
                             <li>
-                                <img src="dist/img/user4-128x128.jpg" alt="User Image">
+                                <img :src="'/storage/img/user4-128x128.jpg'" alt="User Image">
                                 <a class="users-list-name" href="#">Nora</a>
                                 <span class="users-list-date">15 Jan</span>
                             </li>
                             <li>
-                                <img src="dist/img/user3-128x128.jpg" alt="User Image">
+                                <img :src="'/storage/img/user3-128x128.jpg'" alt="User Image">
                                 <a class="users-list-name" href="#">Nadia</a>
                                 <span class="users-list-date">15 Jan</span>
                             </li>
@@ -772,7 +772,7 @@
                         <ul class="products-list product-list-in-card pl-2 pr-2">
                         <li class="item">
                             <div class="product-img">
-                            <img src="dist/img/default-150x150.png" alt="Product Image" class="img-size-50">
+                            <img :src="'/storage/img/default-150x150.png'" alt="Product Image" class="img-size-50">
                             </div>
                             <div class="product-info">
                             <a href="javascript:void(0)" class="product-title">Samsung TV
@@ -785,7 +785,7 @@
                         <!-- /.item -->
                         <li class="item">
                             <div class="product-img">
-                            <img src="dist/img/default-150x150.png" alt="Product Image" class="img-size-50">
+                            <img :src="'/storage/img/default-150x150.png'" alt="Product Image" class="img-size-50">
                             </div>
                             <div class="product-info">
                             <a href="javascript:void(0)" class="product-title">Bicycle
@@ -798,7 +798,7 @@
                         <!-- /.item -->
                         <li class="item">
                             <div class="product-img">
-                            <img src="dist/img/default-150x150.png" alt="Product Image" class="img-size-50">
+                            <img :src="'/storage/img/default-150x150.png'" alt="Product Image" class="img-size-50">
                             </div>
                             <div class="product-info">
                             <a href="javascript:void(0)" class="product-title">
@@ -814,7 +814,7 @@
                         <!-- /.item -->
                         <li class="item">
                             <div class="product-img">
-                            <img src="dist/img/default-150x150.png" alt="Product Image" class="img-size-50">
+                            <img :src="'/storage/img/default-150x150.png'" alt="Product Image" class="img-size-50">
                             </div>
                             <div class="product-info">
                             <a href="javascript:void(0)" class="product-title">PlayStation 4
@@ -846,9 +846,108 @@
 
 <script>
 import AdminLayout from '@/Layouts/AdminLayout'
+
 export default {
      components: {
          AdminLayout,
+     },
+     mounted() {
+         this.salesChart()
+         this.pieChart()
+     },
+     methods: {
+        salesChart() {
+            var salesChartCanvas = document.getElementById('salesChart').getContext('2d')
+            var salesChartData = {
+                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+                datasets: [
+                {
+                    label: 'Digital Goods',
+                    backgroundColor: 'rgba(60,141,188,0.9)',
+                    borderColor: 'rgba(60,141,188,0.8)',
+                    pointRadius: false,
+                    pointColor: '#3b8bba',
+                    pointStrokeColor: 'rgba(60,141,188,1)',
+                    pointHighlightFill: '#fff',
+                    pointHighlightStroke: 'rgba(60,141,188,1)',
+                    data: [28, 48, 40, 19, 86, 27, 90]
+                },
+                {
+                    label: 'Electronics',
+                    backgroundColor: 'rgba(210, 214, 222, 1)',
+                    borderColor: 'rgba(210, 214, 222, 1)',
+                    pointRadius: false,
+                    pointColor: 'rgba(210, 214, 222, 1)',
+                    pointStrokeColor: '#c1c7d1',
+                    pointHighlightFill: '#fff',
+                    pointHighlightStroke: 'rgba(220,220,220,1)',
+                    data: [65, 59, 80, 81, 56, 55, 40]
+                }
+                ]
+            }
+
+            var salesChartOptions = {
+                maintainAspectRatio: false,
+                responsive: true,
+                legend: {
+                    display: false
+                },
+                scales: {
+                    xAxes: [{
+                        gridLines: {
+                        display: false
+                        }
+                    }],
+                    yAxes: [{
+                        gridLines: {
+                            display: false
+                        }
+                    }]
+                }
+            }
+
+            // This will get the first returned node in the jQuery collection.
+            // eslint-disable-next-line no-unused-vars
+            var salesChart = new Chart(salesChartCanvas, {
+                type: 'line',
+                data: salesChartData,
+                options: salesChartOptions
+            }
+            )
+        },
+        pieChart() {
+            var pieChartCanvas = document.getElementById('pieChart').getContext('2d')
+            var pieData = {
+                labels: [
+                'Chrome',
+                'IE',
+                'FireFox',
+                'Safari',
+                'Opera',
+                'Navigator'
+                ],
+                datasets: [
+                {
+                    data: [700, 500, 400, 600, 300, 100],
+                    backgroundColor: ['#f56954', '#00a65a', '#f39c12', '#00c0ef', '#3c8dbc', '#d2d6de']
+                }
+                ]
+            }
+            var pieOptions = {
+                legend: {
+                display: false
+                }
+            }
+            // Create pie or douhnut chart
+            // You can switch between pie and douhnut using the method below.
+            // eslint-disable-next-line no-unused-vars
+            var pieChart = new Chart(pieChartCanvas, {
+                type: 'doughnut',
+                data: pieData,
+                options: pieOptions
+            })
+        }
+
      }
 }
 </script>
