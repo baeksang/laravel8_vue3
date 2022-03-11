@@ -1,2 +1,3 @@
-import 'jquery/dist/jquery.min.js';
-// import './adminlte.min';
+
+window.$ = window.jQuery = require('jquery');
+require('overlayscrollbars');
