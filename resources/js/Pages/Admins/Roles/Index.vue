@@ -23,7 +23,7 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr v-for="(role, index) in roles" :key="index">
+                                            <tr v-for="(role, index) in roles.data" :key="index">
                                                 <td>{{ role.name }}</td>
                                                 <td>
                                                     <div class="d-flex flex-column">
@@ -48,7 +48,7 @@
                                     </table>
                                 </div>
                                 <div class="card-footer clearfix">
-                                    pagination links
+                                    <Pagination :links="roles.links"></Pagination>
                                 </div>
                             </div>
                         </div>
@@ -102,8 +102,6 @@
                                         <button type="button" class="btn btn-danger text-uppercase" style="letter-spacing: 0.1em;" @click="closeModal">Cancel</button>
                                         <button type="submit" class="btn btn-info   text-uppercase" style="letter-spacing: 0.1em;">{{ buttonTxt }} </button>
                                     </div>
-
-
                                 </form>
                             </div>
                         </div>
@@ -116,11 +114,13 @@
 
 <script>
 import AdminLayout from '@/Layouts/AdminLayout'
-import Swal from 'sweetalert2/dist/sweetalert2.js'
+import Pagination from '@/Components/Pagination'
+// import Swal from 'sweetalert2/dist/sweetalert2.js'
 export default {
     props: ['roles', 'permissions'],
     components: {
         AdminLayout,
+        Pagination,
     },
     data() {
         return {
@@ -165,7 +165,7 @@ export default {
         editModal(role){
             this.editMode = true
             $('#modal-lg').modal('show')
-            this.editedIndex = this.roles.indexOf(role)
+            this.editedIndex = this.roles.data.indexOf(role)
             this.form.name          = role.name
             this.form.id            = role.id
             this.form.permissions   = role.permissions

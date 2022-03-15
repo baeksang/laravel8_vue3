@@ -26,6 +26,8 @@ window.Toast = Swal.mixin({
     }
 })
 
+window.Swal = Swal
+
 // font-awesome 과 관련되 import 를 정의
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';

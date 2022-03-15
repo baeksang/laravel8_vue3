@@ -22,6 +22,16 @@ class Permission extends Model implements permissionContract
 
     protected $guarded = [];
 
+    /**
+     * The attributes that should be cast to native types.
+     *
+     * @var array
+     *
+     */
+    protected $casts = [
+        'created_at' => 'datetime:d-M-Y'
+    ];
+
     public function __construct(array $attributes = [])
     {
         $attributes['guard_name'] = $attributes['guard_name'] ?? config('auth.defaults.guard');

@@ -21,7 +21,8 @@ class RoleController extends Controller
         //
         return inertia::render('Admins/Roles/Index', [
             // 'roles' => Role::all(),
-            'roles' => Role::with('permissions')->get(),
+            // 'roles' => Role::with('permissions')->get(),
+            'roles' => Role::with('permissions')->paginate(5),
             'permissions' => Permission::all(),
         ]);
     }
@@ -91,6 +92,14 @@ class RoleController extends Controller
     public function update(Request $request, Role $role)
     {
         //
+
+        $this->validate($request, [
+            'name' => ['required', 'max:25'],
+            'permissions' => 'required'
+        ]);
+        if ($request->has('permissions')){
+            $role->givePermissionTo(collect($request->permissions)->pluck('id')->toArray());
+        }
         $role->syncPermissions(collect($request->permissions)->pluck('id')->toArray());
         $role->update(['name' => $request->name]);
 

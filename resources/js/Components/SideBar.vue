@@ -72,10 +72,10 @@
                             </InertiaLink>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <InertiaLink  :href="route('admin.permissions.index')" class="nav-link">
                                 <font-awesome-icon icon="circle" class="nav-icon" />
                                 <p>Permissions</p>
-                            </a>
+                            </InertiaLink>
                         </li>
                     </ul>
                 </li>
