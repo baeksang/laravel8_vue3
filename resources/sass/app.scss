@@ -7,6 +7,12 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+// Multiselect
+@import '~@suadelabs/vue3-multiselect/dist/vue3-multiselect.css';
+
+// @import '~overlayscrollbars/css/OverlayScrollbars.min.css';
+// @import '../css/adminlte.min.css';
+
 @each $breakpoint in map-keys($grid-breakpoints) {
     @include media-breakpoint-up($breakpoint) {
       $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
@@ -22,6 +28,13 @@
 @import "custom";
 @import "my_custom";
 
+
+// Multiselect
+// @import '~@suadelabs/vue3-multiselect/dist/vue3-multiselect.css';
+
+@import '~sweetalert2/src/sweetalert2.scss';
+@import '~overlayscrollbars/css/OverlayScrollbars.min.css';
+@import '../css/adminlte.min.css';
 
 
 

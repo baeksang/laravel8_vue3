@@ -66,10 +66,10 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <InertiaLink :href="route('admin.roles.index')" class="nav-link">
                                 <font-awesome-icon icon="circle" class="nav-icon" />
                                 <p>Roles</p>
-                            </a>
+                            </InertiaLink>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">
@@ -93,77 +93,6 @@
                     </a>
                 </li>
 
-                <li class="nav-item">
-                    <a href="#" class="nav-link" role="button">
-                        <font-awesome-icon icon="sign-out-alt" class="nav-icon" />
-                        <p>Logout</p>
-                    </a>
-                </li><li class="nav-item">
-                    <a href="#" class="nav-link" role="button">
-                        <font-awesome-icon icon="sign-out-alt" class="nav-icon" />
-                        <p>Logout</p>
-                    </a>
-                </li><li class="nav-item">
-                    <a href="#" class="nav-link" role="button">
-                        <font-awesome-icon icon="sign-out-alt" class="nav-icon" />
-                        <p>Logout</p>
-                    </a>
-                </li><li class="nav-item">
-                    <a href="#" class="nav-link" role="button">
-                        <font-awesome-icon icon="sign-out-alt" class="nav-icon" />
-                        <p>Logout</p>
-                    </a>
-                </li><li class="nav-item">
-                    <a href="#" class="nav-link" role="button">
-                        <font-awesome-icon icon="sign-out-alt" class="nav-icon" />
-                        <p>Logout</p>
-                    </a>
-                </li><li class="nav-item">
-                    <a href="#" class="nav-link" role="button">
-                        <font-awesome-icon icon="sign-out-alt" class="nav-icon" />
-                        <p>Logout</p>
-                    </a>
-                </li><li class="nav-item">
-                    <a href="#" class="nav-link" role="button">
-                        <font-awesome-icon icon="sign-out-alt" class="nav-icon" />
-                        <p>Logout</p>
-                    </a>
-                </li><li class="nav-item">
-                    <a href="#" class="nav-link" role="button">
-                        <font-awesome-icon icon="sign-out-alt" class="nav-icon" />
-                        <p>Logout</p>
-                    </a>
-                </li><li class="nav-item">
-                    <a href="#" class="nav-link" role="button">
-                        <font-awesome-icon icon="sign-out-alt" class="nav-icon" />
-                        <p>Logout</p>
-                    </a>
-                </li><li class="nav-item">
-                    <a href="#" class="nav-link" role="button">
-                        <font-awesome-icon icon="sign-out-alt" class="nav-icon" />
-                        <p>Logout</p>
-                    </a>
-                </li><li class="nav-item">
-                    <a href="#" class="nav-link" role="button">
-                        <font-awesome-icon icon="sign-out-alt" class="nav-icon" />
-                        <p>Logout</p>
-                    </a>
-                </li><li class="nav-item">
-                    <a href="#" class="nav-link" role="button">
-                        <font-awesome-icon icon="sign-out-alt" class="nav-icon" />
-                        <p>Logout</p>
-                    </a>
-                </li><li class="nav-item">
-                    <a href="#" class="nav-link" role="button">
-                        <font-awesome-icon icon="sign-out-alt" class="nav-icon" />
-                        <p>Logout</p>
-                    </a>
-                </li><li class="nav-item">
-                    <a href="#" class="nav-link" role="button">
-                        <font-awesome-icon icon="sign-out-alt" class="nav-icon" />
-                        <p>Logout</p>
-                    </a>
-                </li>
 
             </ul>
         </nav>

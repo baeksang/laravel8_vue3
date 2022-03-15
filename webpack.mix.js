@@ -12,10 +12,11 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js').vue()
-    .styles([
-        'node_modules/overlayscrollbars/css/OverlayScrollbars.min.css',
-        'resources/css/adminlte.min.css'
-    ], 'public/css/app.css')
+    // .styles([
+    //     'node_modules/@suadelabs/vue3-multiselect/dist/vue3-multiselect.css',
+    //     'node_modules/overlayscrollbars/css/OverlayScrollbars.min.css',
+    //     'resources/css/adminlte.min.css'
+    // ], 'public/css/app.css')
     .sass('resources/sass/app.scss', 'public/css')
     .disableNotifications()
     .sourceMaps()
