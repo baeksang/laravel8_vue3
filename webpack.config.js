@@ -1,9 +1,10 @@
+const WebpackConfig = require('laravel-mix/src/builder/WebpackConfig');
 const path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
     resolve: {
-        alias: { 
+        alias: {
             '@': path.resolve('resources/js'),
         },
     },
@@ -11,6 +12,10 @@ module.exports = {
          new webpack.DefinePlugin({
              __VUE_OPTIONS_API__ : true,
              __VUE_PROD_DEVTOOLS__ : false,
+         }),
+         new webpack.ProvidePlugin({
+             $: 'jquery',
+             jQuery: 'jquery'
          })
     ]
 };

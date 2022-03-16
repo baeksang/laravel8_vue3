@@ -43,7 +43,7 @@ Route::prefix('admin')->name('admin.')->middleware(['auth:sanctum', 'verified'])
 
     Route::prefix('permissions')->name('permissions.')->group(function(){
         Route::get('/', [PermissionController::class, 'index'])->name('index');
-        // Route::post('/', [RoleController::class, 'store'])->name('store');
+        Route::post('/', [PermissionController::class, 'store'])->name('store');
         // Route::patch('/{role}', [RoleController::class, 'update'])->name('update');
         // Route::delete('/{role}', [RoleController::class, 'destroy'])->name('destroy');
     });

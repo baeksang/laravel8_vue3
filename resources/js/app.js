@@ -1,8 +1,4 @@
-require('./nodeModule');
-require('./adminlte.min');
-require('./bootstrap');
-
-
+require('./vendor');
 
 // Import modules...
 import { createApp, h } from 'vue';
@@ -54,7 +50,6 @@ createInertiaApp({
             .component('InertiaHead', Head)
             .component('InertiaLink', Link)
             .use(plugin)
-            // .use(Swal)
             .mixin({ methods: { route } })
             .mount(el);
     },

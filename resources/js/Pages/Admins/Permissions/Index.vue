@@ -164,17 +164,17 @@ export default {
             this.form.description   = permission.permissions
         },
         createPermission()  {
-            // this.form.post(this.route('admin.roles.store'),{
-            //     preserveScroll: true,
-            //     onSuccess:() => {
-            //         this.form.reset()
-            //         this.closeModal()
-            //         Toast.fire({
-            //             icon: 'success',
-            //             title: 'New Role Created!'
-            //         })
-            //     }
-            // })
+            this.form.post(this.route('admin.permissions.store'),{
+                preserveScroll: true,
+                onSuccess:() => {
+                    this.form.reset()
+                    this.closeModal()
+                    Toast.fire({
+                        icon: 'success',
+                        title: 'New Permission Created!'
+                    })
+                }
+            })
         },
         editPermission() {
             // this.form.patch(this.route('admin.roles.update', this.form.id, this.form),{

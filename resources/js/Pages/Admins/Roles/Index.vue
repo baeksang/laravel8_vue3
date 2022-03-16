@@ -222,7 +222,5 @@ export default {
 </script>
 
 <style>
-/* .multiselector_content-wrapper {
-    position: relative;
-} */
+
 </style>

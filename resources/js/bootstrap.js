@@ -10,6 +10,7 @@ window._ = require('lodash');
 try {
     window.Popper = require('popper.js').default;
     // window.$ = window.jQuery = require('jquery');
+    // require('overlayscrollbars');
     require('bootstrap');
 } catch (e){}
 
@@ -18,7 +19,7 @@ try {
 
 // window.bootstrap = bootstrap
 
-import 'chart.js/dist/chart'
+// import 'chart.js/dist/chart'
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
  * to our Laravel back-end. This library automatically handles sending the
